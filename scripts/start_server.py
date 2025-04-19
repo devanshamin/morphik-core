@@ -180,7 +180,7 @@ def check_ollama_running(base_url):
 def get_ollama_usage_info():
     """Check if Ollama is required based on the configuration file and get base URLs."""
     try:
-        with open("morphik.toml", "rb") as f:
+        with open("../morphik.toml", "rb") as f:
             config = tomli.load(f)
 
         ollama_configs = []

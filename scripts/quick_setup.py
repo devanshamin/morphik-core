@@ -36,7 +36,7 @@ console_handler.setFormatter(formatter)
 LOGGER.addHandler(console_handler)
 
 # Load configuration from morphik.toml
-config_path = Path("morphik.toml")
+config_path = Path("../morphik.toml")
 with open(config_path, "rb") as f:
     CONFIG = tomli.load(f)
     LOGGER.info("Loaded configuration from morphik.toml")
